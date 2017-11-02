@@ -31,13 +31,13 @@
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dsfsdf"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/eee"/>
     
 
 
