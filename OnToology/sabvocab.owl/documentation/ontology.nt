@@ -1,0 +1,173 @@
+<http://sabcorpus.linkeddata.es/vocab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://sabcorpus.linkeddata.es/vocab> <http://purl.org/dc/terms/creator> "Mar\u00EDa Navas-Loro" .
+<http://sabcorpus.linkeddata.es/vocab> <http://purl.org/dc/terms/creator> "V\u00EDctor Rodr\u00EDguez-Doncel" .
+<http://sabcorpus.linkeddata.es/vocab> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://sabcorpus.linkeddata.es/vocab> <http://purl.org/dc/terms/title> "Vocabulary for Sentiment Analysis towards Brands (SAB vocabulary)" .
+<http://sabcorpus.linkeddata.es/vocab> <http://www.w3.org/2000/01/rdf-schema#comment> "This vocabulary has been created to annotate the SAB corpus"@en .
+<http://sabcorpus.linkeddata.es/vocab> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulario para la anotaci\u00F3n del Corpus de Sentimientos para Marcas (SAB)"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/dsfsdf
+<http://purl.org/dc/terms/dsfsdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/eee
+<http://purl.org/dc/terms/eee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://sabcorpus.linkeddata.es/vocab#hasCategory
+<http://sabcorpus.linkeddata.es/vocab#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sabcorpus.linkeddata.es/vocab#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sabcorpus.linkeddata.es/vocab#CategoryForBrands
+<http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory
+<http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> .
+# 
+# http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory
+<http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> .
+# 
+# http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory
+<http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> .
+# 
+# http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory
+<http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sabcorpus.linkeddata.es/vocab#CategoryForBrands> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://sabcorpus.linkeddata.es/vocab#awareness
+<http://sabcorpus.linkeddata.es/vocab#awareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#awareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> .
+<http://sabcorpus.linkeddata.es/vocab#awareness> <http://www.w3.org/2000/01/rdf-schema#comment> "the user writes about the ad campaign of a brand" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#collectiveWellbeing
+<http://sabcorpus.linkeddata.es/vocab#collectiveWellbeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#collectiveWellbeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory> .
+<http://sabcorpus.linkeddata.es/vocab#collectiveWellbeing> <http://www.w3.org/2000/01/rdf-schema#comment> "the role brands play in communities" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#dissatisfaction
+<http://sabcorpus.linkeddata.es/vocab#dissatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#dissatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#dissatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "dissatisfaction" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#evaluation
+<http://sabcorpus.linkeddata.es/vocab#evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> .
+<http://sabcorpus.linkeddata.es/vocab#evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "the user is comparing brands or considering a purchase" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#fear
+<http://sabcorpus.linkeddata.es/vocab#fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#fear> <http://www.w3.org/2000/01/rdf-schema#comment> "fear" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#happiness
+<http://sabcorpus.linkeddata.es/vocab#happiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#happiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#happiness> <http://www.w3.org/2000/01/rdf-schema#comment> "happiness" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#hate
+<http://sabcorpus.linkeddata.es/vocab#hate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#hate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#hate> <http://www.w3.org/2000/01/rdf-schema#comment> "hate" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#love
+<http://sabcorpus.linkeddata.es/vocab#love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#love> <http://www.w3.org/2000/01/rdf-schema#comment> "love" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#marketplace
+<http://sabcorpus.linkeddata.es/vocab#marketplace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#marketplace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory> .
+<http://sabcorpus.linkeddata.es/vocab#marketplace> <http://www.w3.org/2000/01/rdf-schema#comment> "marketplace" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#personalWellbeing
+<http://sabcorpus.linkeddata.es/vocab#personalWellbeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#personalWellbeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory> .
+<http://sabcorpus.linkeddata.es/vocab#personalWellbeing> <http://www.w3.org/2000/01/rdf-schema#comment> "self-esteem, healthy lifestyles, fitness or happiness" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#place
+<http://sabcorpus.linkeddata.es/vocab#place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> .
+<http://sabcorpus.linkeddata.es/vocab#place> <http://www.w3.org/2000/01/rdf-schema#comment> "point of sale and customer service" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#postpurchase
+<http://sabcorpus.linkeddata.es/vocab#postpurchase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#postpurchase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> .
+<http://sabcorpus.linkeddata.es/vocab#postpurchase> <http://www.w3.org/2000/01/rdf-schema#comment> "there is evidence that the user has bought the product" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#price
+<http://sabcorpus.linkeddata.es/vocab#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> .
+<http://sabcorpus.linkeddata.es/vocab#price> <http://www.w3.org/2000/01/rdf-schema#comment> "price" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#product
+<http://sabcorpus.linkeddata.es/vocab#product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> .
+<http://sabcorpus.linkeddata.es/vocab#product> <http://www.w3.org/2000/01/rdf-schema#comment> "quality, design, guarantee" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#promotion
+<http://sabcorpus.linkeddata.es/vocab#promotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#promotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory> .
+<http://sabcorpus.linkeddata.es/vocab#promotion> <http://www.w3.org/2000/01/rdf-schema#comment> "affiliate marketing, sponsorship and advertising" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#purchase
+<http://sabcorpus.linkeddata.es/vocab#purchase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#purchase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> .
+<http://sabcorpus.linkeddata.es/vocab#purchase> <http://www.w3.org/2000/01/rdf-schema#comment> "the user is purchasing a product or waiting for its arrival" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#review
+<http://sabcorpus.linkeddata.es/vocab#review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory> .
+<http://sabcorpus.linkeddata.es/vocab#review> <http://www.w3.org/2000/01/rdf-schema#comment> "an opinion on the product is given" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#sadness
+<http://sabcorpus.linkeddata.es/vocab#sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#sadness> <http://www.w3.org/2000/01/rdf-schema#comment> "sadness" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#satisfaction
+<http://sabcorpus.linkeddata.es/vocab#satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#satisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "satisfaction" .
+# 
+# http://sabcorpus.linkeddata.es/vocab#trust
+<http://sabcorpus.linkeddata.es/vocab#trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://sabcorpus.linkeddata.es/vocab#trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory> .
+<http://sabcorpus.linkeddata.es/vocab#trust> <http://www.w3.org/2000/01/rdf-schema#comment> "trust" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

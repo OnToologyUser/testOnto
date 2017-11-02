@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:SentimentAnalysisCategory" "base:PurchaseFunnelCategory" "base:MeaningfulBrandsCategory" "base:MarketingMixCategory" "base:CategoryForBrands" ; /*classes style*/
+	"base:MeaningfulBrandsCategory" -> "base:CategoryForBrands" [ label = "rdfs:subClassOf" ];
+	"base:PurchaseFunnelCategory" -> "base:CategoryForBrands" [ label = "rdfs:subClassOf" ];
+	"base:SentimentAnalysisCategory" -> "base:CategoryForBrands" [ label = "rdfs:subClassOf" ];
+	"base:MarketingMixCategory" -> "base:CategoryForBrands" [ label = "rdfs:subClassOf" ];
+
+}

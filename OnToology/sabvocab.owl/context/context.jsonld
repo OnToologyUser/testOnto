@@ -1,0 +1,41 @@
+{
+  "@context" : {
+    "eee" : {
+      "@id" : "http://purl.org/dc/terms/eee"
+    },
+    "SentimentAnalysisCategory" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MarketingMixCategory" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory"
+    },
+    "CategoryForBrands" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#CategoryForBrands"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "PurchaseFunnelCategory" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory"
+    },
+    "MeaningfulBrandsCategory" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory"
+    },
+    "dsfsdf" : {
+      "@id" : "http://purl.org/dc/terms/dsfsdf"
+    },
+    "hasCategory" : {
+      "@id" : "http://sabcorpus.linkeddata.es/vocab#hasCategory",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    }
+  }
+}

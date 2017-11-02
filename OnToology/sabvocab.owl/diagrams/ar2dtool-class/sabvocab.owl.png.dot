@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:CategoryForBrands" ; /*classes style*/
+	"http://sabcorpus.linkeddata.es/vocab" -> "https://creativecommons.org/licenses/by/4.0/" [ label = "dct:license" ];
+	"owl:Thing" -> "base:CategoryForBrands" [ label = "base:hasCategory" ];
+
+}

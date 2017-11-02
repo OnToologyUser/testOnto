@@ -1,0 +1,190 @@
+@prefix : <http://sabcorpus.linkeddata.es/vocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://sabcorpus.linkeddata.es/vocab> .
+
+<http://sabcorpus.linkeddata.es/vocab> rdf:type owl:Ontology ;
+                                        <http://purl.org/dc/terms/creator> "María Navas-Loro"^^xsd:string ,
+                                                                           "Víctor Rodríguez-Doncel"^^xsd:string ;
+                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                        <http://purl.org/dc/terms/title> "Vocabulary for Sentiment Analysis towards Brands (SAB vocabulary)"^^xsd:string ;
+                                        rdfs:comment "This vocabulary has been created to annotate the SAB corpus"@en ,
+                                                     "Vocabulario para la anotación del Corpus de Sentimientos para Marcas (SAB)"@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/dsfsdf
+<http://purl.org/dc/terms/dsfsdf> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/eee
+<http://purl.org/dc/terms/eee> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://sabcorpus.linkeddata.es/vocab#hasCategory
+:hasCategory rdf:type owl:ObjectProperty ;
+             rdfs:range :CategoryForBrands .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sabcorpus.linkeddata.es/vocab#CategoryForBrands
+:CategoryForBrands rdf:type owl:Class .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#MarketingMixCategory
+:MarketingMixCategory rdf:type owl:Class ;
+                      rdfs:subClassOf :CategoryForBrands .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#MeaningfulBrandsCategory
+:MeaningfulBrandsCategory rdf:type owl:Class ;
+                          rdfs:subClassOf :CategoryForBrands .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#PurchaseFunnelCategory
+:PurchaseFunnelCategory rdf:type owl:Class ;
+                        rdfs:subClassOf :CategoryForBrands .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#SentimentAnalysisCategory
+:SentimentAnalysisCategory rdf:type owl:Class ;
+                           rdfs:subClassOf :CategoryForBrands .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://sabcorpus.linkeddata.es/vocab#awareness
+:awareness rdf:type owl:NamedIndividual ,
+                    :PurchaseFunnelCategory ;
+           rdfs:comment "the user writes about the ad campaign of a brand"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#collectiveWellbeing
+:collectiveWellbeing rdf:type owl:NamedIndividual ,
+                              :MeaningfulBrandsCategory ;
+                     rdfs:comment "the role brands play in communities"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#dissatisfaction
+:dissatisfaction rdf:type owl:NamedIndividual ,
+                          :SentimentAnalysisCategory ;
+                 rdfs:comment "dissatisfaction"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#evaluation
+:evaluation rdf:type owl:NamedIndividual ,
+                     :PurchaseFunnelCategory ;
+            rdfs:comment "the user is comparing brands or considering a purchase"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#fear
+:fear rdf:type owl:NamedIndividual ,
+               :SentimentAnalysisCategory ;
+      rdfs:comment "fear"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#happiness
+:happiness rdf:type owl:NamedIndividual ,
+                    :SentimentAnalysisCategory ;
+           rdfs:comment "happiness"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#hate
+:hate rdf:type owl:NamedIndividual ,
+               :SentimentAnalysisCategory ;
+      rdfs:comment "hate"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#love
+:love rdf:type owl:NamedIndividual ,
+               :SentimentAnalysisCategory ;
+      rdfs:comment "love"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#marketplace
+:marketplace rdf:type owl:NamedIndividual ,
+                      :MeaningfulBrandsCategory ;
+             rdfs:comment "marketplace"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#personalWellbeing
+:personalWellbeing rdf:type owl:NamedIndividual ,
+                            :MeaningfulBrandsCategory ;
+                   rdfs:comment "self-esteem, healthy lifestyles, fitness or happiness"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#place
+:place rdf:type owl:NamedIndividual ,
+                :MarketingMixCategory ;
+       rdfs:comment "point of sale and customer service"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#postpurchase
+:postpurchase rdf:type owl:NamedIndividual ,
+                       :PurchaseFunnelCategory ;
+              rdfs:comment "there is evidence that the user has bought the product"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#price
+:price rdf:type owl:NamedIndividual ,
+                :MarketingMixCategory ;
+       rdfs:comment "price"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#product
+:product rdf:type owl:NamedIndividual ,
+                  :MarketingMixCategory ;
+         rdfs:comment "quality, design, guarantee"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#promotion
+:promotion rdf:type owl:NamedIndividual ,
+                    :MarketingMixCategory ;
+           rdfs:comment "affiliate marketing, sponsorship and advertising"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#purchase
+:purchase rdf:type owl:NamedIndividual ,
+                   :PurchaseFunnelCategory ;
+          rdfs:comment "the user is purchasing a product or waiting for its arrival"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#review
+:review rdf:type owl:NamedIndividual ,
+                 :PurchaseFunnelCategory ;
+        rdfs:comment "an opinion on the product is given"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#sadness
+:sadness rdf:type owl:NamedIndividual ,
+                  :SentimentAnalysisCategory ;
+         rdfs:comment "sadness"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#satisfaction
+:satisfaction rdf:type owl:NamedIndividual ,
+                       :SentimentAnalysisCategory ;
+              rdfs:comment "satisfaction"^^xsd:string .
+
+
+###  http://sabcorpus.linkeddata.es/vocab#trust
+:trust rdf:type owl:NamedIndividual ,
+                :SentimentAnalysisCategory ;
+       rdfs:comment "trust"^^xsd:string .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
